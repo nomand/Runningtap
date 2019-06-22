@@ -33,4 +33,18 @@ function Main()
     }
 }
 
+function on_scroll()
+{
+  let logo = document.getElementById("logo");
+  
+  if(document.getElementById("photo") != null)
+  {
+    if(window.scrollY > document.getElementById("photo").offsetHeight - 120){
+      if(!logo.classList.contains("sticky")) logo.classList.add("sticky"); }
+    else {
+      if(logo.classList.contains("sticky")) logo.classList.remove("sticky"); }
+  }
+}
+
 window.addEventListener("hashchange", () => main.load(window.document.location.hash));
+window.addEventListener("scroll", on_scroll);

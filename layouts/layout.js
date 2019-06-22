@@ -30,16 +30,21 @@ let sidebar = `
 let content = `
 <div class="desc">
     <div id="presentation">
-        {{#if title}}<p><h3>{{title}}</h3></p>{{/if}}
-        {{#if description}}<p>{{{description}}}</p>{{/if}}
-        {{#if projects}}<div id="projects">
+        {{#if title}}<h3>{{title}}</h3>{{/if}}
+        {{#if description}}{{#each description}}{{{this}}}{{/each}}{{/if}}
+
+        {{#if projects}}
+            <div id="projects">
+            <h2>{{projects.title}}</h2>
             {{#each projects}}
-            <a class="card thumbnail cover" style="background-image: url('images/{{thumbnail}}')" href="#{{url}}">
-                {{#if flag}}<div class="flag {{flag}}"></div>{{/if}}
-                <div class="title">{{name}}</div>
-            </a>
+                <a class="card thumbnail cover" style="background-image: url('images/{{thumbnail}}')" href="#{{url}}">
+                    {{#if flag}}<div class="flag {{flag}}"></div>{{/if}}
+                    <div class="title">{{name}}</div>
+                </a>
             {{/each}}
-        </div>{{/if}}
+            </div>
+        {{/if}}
+        
     </div>
 </div>
 `

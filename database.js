@@ -12,34 +12,46 @@ let database =
         [
             {
                 "name" : "Cinematic Skies: Golden Hour",
-                "thumbnail" : "CS_01_th.jpg",
-                "url" : "cinematic-skies-01"
+                "thumbnail" : "cinematic-skies-01-th.jpg",
+                "url" : "cinematic-skies-01",
+                "flag" : "unity"
             },
             {
                 "name" : "Reveal Shader",
-                "thumbnail" : "reveal_shader_th.jpg",
+                "thumbnail" : "reveal-shader-th.jpg",
                 "url" : "reveal-shader",
                 "flag" : "github"
             },
             {
-                "name" : "Audio Visualization Framework",
-                "thumbnail" : "audio_viz_th.jpg",
-                "url" : "audioviz-framework",
+                "name" : "Audio Visualization",
+                "thumbnail" : "audio-visualizaiton-th.jpg",
+                "url" : "audiovis-framework",
+                "flag" : "github"
+            },
+            {
+                "name" : "Perlin Maps",
+                "thumbnail" : "perling-maps-th.jpg",
+                "url" : "perlin-maps",
                 "flag" : "github"
             }
-        ]
+        ],
+        "title" : "Gamedev Resources"
     },
 
     "about":
     {
         "title" : "Runningtap",
         "sidebar" : "About",
-        "description" : `Runningtap is a side gig run by <a href="https://nomand.co">nomand</a>, a tech artist based in New Zealand, making games, software, hardware and flying robots.`
+        "description" :
+        [
+            `<p>Runningtap is a side gig run by <a href="https://nomand.co">nomand</a>, a tech artist based in New Zealand, making games, software, hardware, all things digital and analogue.</p>`,
+            `<p>Support me by buying some of my premium <a href="#home">assets</a>!`
+        ]
     },
 
     "cinematic-skies-01" :
     {
-        "header" : "sky.jpg",
+        "header" : "cinematic-skies-01.jpg",
         "title" : "Cinematic Sky HRDI pack.",
         "sidebar" : "Buy:",
         "links" : [ 
@@ -52,11 +64,20 @@ let database =
                 "url" : "https://gumroad.com/"
             }
         ],
-        "description" : "A set of 10 HDR 8k 32bit full spherical HDRI images."
+        "description" : 
+        [
+            "<p>A set of 10 HDR full spherical HDRI images for use as skyboxes in games, architectural renders, Marmoset toolbag, Substance Designer/Painter or any other CGI lookdev application.</p>",
+            "<p>Features:</p>",
+            `<ul>
+                <li>32 bit .EXR</li>
+                <li>8k (8192 x 4096)</li>
+                <li>Longitude-Latitude (Equirectangular) format</li>
+            </ul>`
+        ]
     },
     "reveal-shader" :
     {
-        "header" : "reveal_shader.jpg",
+        "header" : "reveal-shader.jpg",
         "title" : "Reveal Shader",
         "sidebar" : "Download:",
         "links" : [ 
@@ -65,9 +86,22 @@ let database =
                 "url" : "https://github.com/nomand/revealshader"
             }
         ],
-        "description" : "A set of 10 HDR 8k 32bit full spherical HDRI images."
+        "description" : 
+            [
+                "<p>A set of shaders for Unity3D that generates a render texture based on transform position and re-projects it back onto game world as a mask for various shader effects.</p>",
+                "<p>Features:</p>",
+                `<ul>
+                    <li>Black and White to RGB texture reveal shader</li>
+                    <li>Transparent to Opaque RGB Texture reveal shader</li>
+                    <li>Displacement Tesselation shader</li>
+                    <li>Auto and Manual world bounds lookup</li>
+                    <li>Fading over time</li>
+                    <li>Adaptive RenderTexture aspect ratio</li>
+                    <li>Custom inspector</li>
+                </ul>`
+            ]
     },
-    "audioviz-framework" :
+    "audiovis-framework" :
     {
         "header" : "",
         "title" : "Audio Visualization Framework",
@@ -75,9 +109,28 @@ let database =
         "links" : [ 
             {
                 "store":"Github",
-                "url" : "https://github.com/nomand/revealshader"
+                "url" : "https://github.com/nomand/UnityAudioVisualization"
             }
         ],
-        "description" : "A set of Unity scripts that"
+        "description" : 
+        [
+            "<p>A set of Unity scripts that read AudioSource data and exposes frequency, stereo and amplitude data to drive parameters to animate shaders, materials, or whatever else.</p>"
+        ]
+    },
+    "perlin-maps" :
+    {
+        "header" : "",
+        "title" : "Perlin Maps",
+        "sidebar" : "Download:",
+        "links" : [ 
+            {
+                "store":"Github",
+                "url" : "https://github.com/nomand/PerlinMaps"
+            }
+        ],
+        "description" : 
+        [
+            "<p>A set of perlin maps for material and shader development. 3 sets of seamless loops at 3 octave settings.</p>"
+        ]
     }
 };
