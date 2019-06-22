@@ -22,7 +22,7 @@ function Main()
 
     this.assemble = function(target)
     {   
-        let context = database[target] === 'undefined' ? database["404"] : database[target];
+        let context = !!database[target] ? database[target] : database["404"];
 
         let parseHeader = Handlebars.compile(header);
         let parseFooter = Handlebars.compile(footer);

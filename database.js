@@ -3,7 +3,7 @@ let database =
     "404" :
     {
         "title" : "404 Page doesn't exist",
-        "description" : `Hey, there's nothing here. Try <a href="#assets">here</a>`
+        "description" : `Hey, there's nothing here. Try <a href="#home">this</a>?`
     },
 
     "home" :
@@ -19,7 +19,13 @@ let database =
                 "name" : "Reveal Shader",
                 "thumbnail" : "reveal_shader_th.jpg",
                 "url" : "reveal-shader",
-                "foss" : "true"
+                "flag" : "github"
+            },
+            {
+                "name" : "Audio Visualization Framework",
+                "thumbnail" : "audio_viz_th.jpg",
+                "url" : "audioviz-framework",
+                "flag" : "github"
             }
         ]
     },
@@ -60,5 +66,18 @@ let database =
             }
         ],
         "description" : "A set of 10 HDR 8k 32bit full spherical HDRI images."
+    },
+    "audioviz-framework" :
+    {
+        "header" : "",
+        "title" : "Audio Visualization Framework",
+        "sidebar" : "Download:",
+        "links" : [ 
+            {
+                "store":"Github",
+                "url" : "https://github.com/nomand/revealshader"
+            }
+        ],
+        "description" : "A set of Unity scripts that"
     }
 };

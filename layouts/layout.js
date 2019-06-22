@@ -21,7 +21,7 @@ let sidebar = `
     <h3>{{sidebar}}</h3>
     {{#if links}}
         {{#each links}}
-            <a href="{{url}}" class="highlighted round" target="_blank">{{store}}</a>
+            <a href="{{url}}" class="storebutton round" target="_blank">{{store}}</a>
         {{/each}}
     {{/if}}
 </div>{{/if}}
@@ -30,14 +30,16 @@ let sidebar = `
 let content = `
 <div class="desc">
     <div id="presentation">
-        <p><h3>{{title}}</h3></p>
-        <p>{{{description}}}</p>
-        {{#each projects}}
-        <a class="card {{#if foss}}free{{/if}}" href="#{{url}}">
-            <div class="thumbnail cover" style="background-image: url('images/{{thumbnail}}')">{{#if foss}}<div class="foss"></div>{{/if}}</div>
-            <div class="title">{{name}}</div>
-        </a>
-        {{/each}}
+        {{#if title}}<p><h3>{{title}}</h3></p>{{/if}}
+        {{#if description}}<p>{{{description}}}</p>{{/if}}
+        {{#if projects}}<div id="projects">
+            {{#each projects}}
+            <a class="card thumbnail cover" style="background-image: url('images/{{thumbnail}}')" href="#{{url}}">
+                {{#if flag}}<div class="flag {{flag}}"></div>{{/if}}
+                <div class="title">{{name}}</div>
+            </a>
+            {{/each}}
+        </div>{{/if}}
     </div>
 </div>
 `
@@ -45,8 +47,9 @@ let content = `
 let footer = `
 <div id="footer">
     <div id="footerwrap">
-        <a class="icon github" href="http://github.com/nomand"></a>
-        <a class="icon unity" href=""></a>
+        <a class="icon twitter" href="http://twitter.com/runningtap" target="_blank"></a>
+        <a class="icon github" href="http://github.com/nomand" target="_blank"></a>
+        <a class="icon unity" href="" target="_blank"></a>
         <div class="credit">runningtap ltd. © </div>
     </div>
 </div>
