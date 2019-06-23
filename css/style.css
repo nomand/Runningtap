@@ -14,7 +14,7 @@ a:hover { color: white; }
 
 #view { min-height: 100%; position: relative; transition: all 250ms; }
 
-#header { display: block; position: relative; width: 100%; min-height: 120px; }
+#header { display: block; position: relative; width: 100%; min-height: 144px; }
 #header #photo { display: block; position: relative; width:100%; height: 50vh; max-height: 1080px; transition: all 150ms; }
 
 #header #menu { display: flex; flex-flow: row wrap; align-items: flex-start; position: fixed; width: 100%; top: 0px; right: 0px; padding: 40px 40px 40px 32px; text-align: right; float: right; }

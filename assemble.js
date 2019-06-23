@@ -37,13 +37,10 @@ function on_scroll()
 {
   let menu = document.getElementById("menu");
   
-  if(document.getElementById("photo") != null)
-  {
-    if(window.scrollY > document.getElementById("photo").offsetHeight - 150){
+    if(window.scrollY > document.getElementById("header").offsetHeight - 150){
       if(!menu.classList.contains("sticky")) menu.classList.add("sticky"); }
     else {
       if(menu.classList.contains("sticky")) menu.classList.remove("sticky"); }
-  }
 }
 
 window.addEventListener("hashchange", () => main.load(window.document.location.hash));
