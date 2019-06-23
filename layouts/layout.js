@@ -1,16 +1,16 @@
 let header = `
     <div id="header">
-        <a id="logo" href="#home"></a>
         {{#if header}}
         <div id="photo" class="cover" style="background-image: url('images/{{header}}');"></div>
         {{/if}}
         <div id="menu">
-            <a href="https://twitter.com/runningtap" class="item"><h3>Contact</h3></a>
-            <a href="#about" class="item"><h3>About</h3></a>
+            <a id="logo" href="#home"></a>
             <form class="item" action="https://tinyletter.com/runningtap" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/runningtap', 'popupwindow', 'scrollbars=yes, width=800, height=600'); return true">
                 <input type="email" value="" name="EMAIL" class="email" placeholder="newsletter!" required="">
                 <input type="submit" value="Subscribe" name="subscribe" class="button">
             </form>
+            <a href="#about" class="item"><h3>About</h3></a>
+            <a href="https://twitter.com/runningtap" class="item"><h3>Contact</h3></a>
         </div>
     </div>
 `
@@ -37,7 +37,7 @@ let content = `
             <div id="projects">
             <h2>{{projects.title}}</h2>
             {{#each projects}}
-                <a class="card thumbnail cover" style="background-image: url('images/{{thumbnail}}')" href="#{{url}}">
+                <a class="card thumbnail cover" style="background-image: url('images/{{url}}-th.jpg')" href="#{{url}}">
                     {{#if flag}}<div class="flag {{flag}}"></div>{{/if}}
                     <div class="title">{{name}}</div>
                 </a>

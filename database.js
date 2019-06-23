@@ -12,26 +12,27 @@ let database =
         [
             {
                 "name" : "Cinematic Skies: Golden Hour",
-                "thumbnail" : "cinematic-skies-01-th.jpg",
                 "url" : "cinematic-skies-01",
                 "flag" : "unity"
             },
             {
                 "name" : "Reveal Shader",
-                "thumbnail" : "reveal-shader-th.jpg",
                 "url" : "reveal-shader",
                 "flag" : "github"
             },
             {
                 "name" : "Audio Visualization",
-                "thumbnail" : "audio-visualizaiton-th.jpg",
                 "url" : "audiovis-framework",
                 "flag" : "github"
             },
             {
                 "name" : "Perlin Maps",
-                "thumbnail" : "perling-maps-th.jpg",
                 "url" : "perlin-maps",
+                "flag" : "github"
+            },
+            {
+                "name" : "UV Projection Shader",
+                "url" : "uv-projection-shader",
                 "flag" : "github"
             }
         ],
@@ -131,6 +132,24 @@ let database =
         "description" : 
         [
             "<p>A set of perlin maps for material and shader development. 3 sets of seamless loops at 3 octave settings.</p>"
+        ]
+    },
+    "uv-projection-shader" :
+    {
+        "header" : "uv-projection-shader.jpg",
+        "title" : "UV Projection Shader",
+        "sidebar" : "Download:",
+        "links" : [ 
+            {
+                "store":"Github",
+                "url" : "https://github.com/nomand/UVProjectionShader"
+            }
+        ],
+        "description" : 
+        [
+            "<p>This shader demonstrates a method of using worldspace transforms (relative positions, scale and rotation) to remap texture UV's in XZ world axis. The technique can be used to create variety of shader effects.</p>",
+            "<p>Example supplied uses a heightmap projection for vertex offset. Creted using Amplify Shader Editor.</p>",
+            `<img src="images/uv-projection-shader-01.gif" class="gif"/>`
         ]
     }
 };

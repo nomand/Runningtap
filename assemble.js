@@ -35,14 +35,14 @@ function Main()
 
 function on_scroll()
 {
-  let logo = document.getElementById("logo");
+  let menu = document.getElementById("menu");
   
   if(document.getElementById("photo") != null)
   {
-    if(window.scrollY > document.getElementById("photo").offsetHeight - 120){
-      if(!logo.classList.contains("sticky")) logo.classList.add("sticky"); }
+    if(window.scrollY > document.getElementById("photo").offsetHeight - 150){
+      if(!menu.classList.contains("sticky")) menu.classList.add("sticky"); }
     else {
-      if(logo.classList.contains("sticky")) logo.classList.remove("sticky"); }
+      if(menu.classList.contains("sticky")) menu.classList.remove("sticky"); }
   }
 }
 
