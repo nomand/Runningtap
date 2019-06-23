@@ -36,7 +36,7 @@ let database =
                 "flag" : "github"
             }
         ],
-        "title" : "Gamedev Resources"
+        "title" : "Runningtap provides premium, free, open source and experimental gamedev resources"
     },
 
     "about":
@@ -120,7 +120,7 @@ let database =
     },
     "perlin-maps" :
     {
-        "header" : "",
+        "header" : "perlin-maps.jpg",
         "title" : "Perlin Maps",
         "sidebar" : "Download:",
         "links" : [ 
@@ -131,7 +131,8 @@ let database =
         ],
         "description" : 
         [
-            "<p>A set of perlin maps for material and shader development. 3 sets of seamless loops at 3 octave settings.</p>"
+            "<p>This project is a set of animated perlin noise textures, for shader and effects prototyping. It's not always affordable to generate noise, especially with more than one octave.</p>",
+            "<p>This includes 3 sets of seamless loops at 1, 2 and 3 octaves.</p>"
         ]
     },
     "uv-projection-shader" :
