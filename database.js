@@ -36,7 +36,7 @@ let database =
                 "flag" : "github"
             }
         ],
-        "title" : "Runningtap provides premium, free, open source and experimental gamedev resources"
+        "title" : "Premium, free, open source and experimental gamedev resources"
     },
 
     "about":
@@ -115,7 +115,7 @@ let database =
         ],
         "description" : 
         [
-            "<p>A set of Unity scripts that read AudioSource data and exposes frequency, stereo and amplitude data to drive parameters to animate shaders, materials, or whatever else.</p>"
+            "<p>A set of Unity scripts that read AudioSource data and exposes frequency, stereo and amplitude values to drive parameters to animate shaders, materials, or whatever else.</p>"
         ]
     },
     "perlin-maps" :
@@ -131,8 +131,8 @@ let database =
         ],
         "description" : 
         [
-            "<p>This project is a set of animated perlin noise textures, for shader and effects prototyping. It's not always affordable to generate noise, especially with more than one octave.</p>",
-            "<p>This includes 3 sets of seamless loops at 1, 2 and 3 octaves.</p>"
+            "<p>This project is a set of animated perlin noise textures, for shader and effects prototyping. It's not always computationally affordable to generate noise, especially the more octaves you have.</p>",
+            "<p>This includes 3 sets at 1, 2 and 3 octaves. Each set is a seamless loop, 20 frames long at 3 zoom levels. These come as standalone 16bit png's.</p>"
         ]
     },
     "uv-projection-shader" :
