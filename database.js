@@ -34,6 +34,11 @@ let database =
                 "name" : "UV Projection Shader",
                 "url" : "uv-projection-shader",
                 "flag" : "github"
+            },
+            {
+                "name" : "Blender to Unity",
+                "url" : "blender-to-unity",
+                "flag" : "github"
             }
         ],
         "title" : "Premium, free, open source and experimental gamedev resources"
@@ -151,6 +156,22 @@ let database =
             "<p>This shader demonstrates a method of using worldspace transforms (relative positions, scale and rotation) to remap texture UV's in XZ world axis. The technique can be used to create variety of shader effects.</p>",
             "<p>Example supplied uses a heightmap projection for vertex offset. Creted using Amplify Shader Editor.</p>",
             `<img src="images/uv-projection-shader-01.gif" class="gif"/>`
+        ]
+    },
+    "blender-to-unity":
+    {
+        "header" : "blender-to-unity.jpg",
+        "title" : "Blender to Unity",
+        "sidebar" : "Download:",
+        "links" : [ 
+            {
+                "store":"Github",
+                "url" : "https://github.com/nomand/BlenderToUnity"
+            }
+        ],
+        "description" : 
+        [
+            "<p>This blender addon applies axis compensation to nested meshes and hierarchies for export to Unity, resulting in clean gameobject transform.rotation properties.</p>"
         ]
     }
 };

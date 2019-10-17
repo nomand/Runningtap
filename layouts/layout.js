@@ -37,7 +37,7 @@ let content = `
             <div id="projects">
             <h2>{{projects.title}}</h2>
             {{#each projects}}
-                <a class="card thumbnail cover round" style="background-image: url('images/{{url}}-th.jpg')" href="#{{url}}">
+                <a class="card cover round" style="background-image: url('images/{{url}}-th.jpg')" href="#{{url}}">
                     {{#if flag}}<div class="flag {{flag}}"></div>{{/if}}
                     <div class="title">{{name}}</div>
                 </a>

@@ -37,7 +37,7 @@ a:hover { color: white; }
 #content #presentation .gif { width: 100%; height: auto; }
 
 #content a.card { flex: 0 0 250px; width: 250px; height: 200px; position: relative; margin: 0px 10px 10px 0; transition: all 250ms; }
-#content a.card:hover { background-position-y: 50%; }
+#content a.card :hover { background-position-y: 50%; }
 #content .card .title { display: block; position: absolute; bottom: 0px; width: 100%; text-align: left; padding: 10px; color: white; font-family: sans-serif; line-height: 20px; font-size: 20px; line-height: 30px; font-weight: 700; letter-spacing: 2px; }
 #content .card .flag { position: relative; width: 35px; height: 35px; position: relative; top: 3px; left: 3px; float: top; float: left; }
 #content .card .flag.github { background-image: url("../svg/github.svg"); }
